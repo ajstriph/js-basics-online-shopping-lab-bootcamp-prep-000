@@ -60,7 +60,7 @@ function total() {
   var itemTwoValue = itemTwo[itemTwoKey[0]];
   var totalCost = itemOneValue + itemTwoValue;
   return totalCost;
-  
+
   //*var totalCost = sorghumCost + tarragonCost;
   //return totalCost;
 }
