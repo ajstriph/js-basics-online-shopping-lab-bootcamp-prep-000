@@ -44,7 +44,7 @@ function viewCart() {
     var pearKey = Object.keys(cart[1]);
     var quinceKey = Object.keys(cart[2]);
     var rhubarbKey = Object.keys(cart[3]);
-    return console.log(`In your cart, you have ` + orangeKey[0] + ` at $` + orange[orangeKey[0]] + `, ` + pearKey[0] + ` at $` + pear[pearKey[0]] + `, ` + quinceKey[0] + ` at $` + quince[quinceKey[0]] + `, and ` + rhubarbKey[0] + ` at $` + rhubarb[rhubarbKey[0]] + `.`);
+    return console.log(`In your cart, you have ` + orangeKey[0] + ` at $` + orange[orangeKey[0]] + `, ` + pearKey[0] + ` at $` + pear[pearKey[0]] + `, ` + quinceKey[0] + ` at $` + quince[quinceKey[0]] + `.`);
   }
 }
 
