@@ -45,9 +45,9 @@ function viewCart() {
     var quinceKey = Object.keys(cart[2]);
     var rhubarbKey = Object.keys(cart[3]);
     return console.log(`In your cart, you have ` + orangeKey[0] + ` at $` + orange[orangeKey[0]] + `, ` + pearKey[0] + ` at $` + pear[pearKey[0]] + `, ` + quinceKey[0] + ` at $` + quince[quinceKey[0]] + `.`);
-  }
+  };
 }
-
+}
 function total() {
   //*var totalCost = sorghumCost + tarragonCost;
   //return totalCost;
