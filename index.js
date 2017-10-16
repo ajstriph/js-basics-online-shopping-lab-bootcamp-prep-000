@@ -59,9 +59,6 @@ function total() {
     amount = amount + price;
   }
   return amount;
-
-  //*var totalCost = sorghumCost + tarragonCost;
-  //return totalCost;
 }
 
 function removeFromCart(item) {
