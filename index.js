@@ -41,13 +41,13 @@ function viewCart() {
     var itemPrice;
     for (var i = 0; i < cart.length; i++){
     item = cart[i]; // item = {"orange": 45}
-    itemKey = Object.keys(item)[0];
-    itemPrice = item(itemKey);
+    itemKey = Object.keys(item)[0]; // "orange"
+    itemPrice = item[itemKey]; // 45
     itemArray.push(`${itemKey} at $${itemPrice}`);
   };
     console.log(`In your cart, you have ` + itemArray.join(`, and `) + `.`);
     if (i = cart.length-1){
-      console.log(` and ` + itemArray.push(`${itemKey} at $${itemPrice}`) + `.`);
+      console.log(` and ` + itemArray.push(`${itemKey} at $${itemPrice}`));
     }
 
 }
