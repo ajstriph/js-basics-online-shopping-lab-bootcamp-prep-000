@@ -35,15 +35,18 @@ function viewCart() {
     return console.log(`In your cart, you have ` + itemsOneKey[0] + ` at $` + itemsOne[itemsOneKey[0]] + ` and ` + itemsTwoKey[0] + ` at $` + itemsTwo[itemsTwoKey[0]] + `.`);
   }
   else{
-    while (cart.length > 2){
-    var itemOne = cart[0];
-    var itemTwo = cart[1];
-    var itemThree = cart[2];
-    var itemOneKey = Object.keys(cart[0]);
-    var itemTwoKey = Object.keys(cart[1]);
-    var itemThreeKey = Object.keys(cart[2]);
-    return console.log(`In your cart, you have ` + orangeKey[0] + ` at $` + orange[orangeKey[0]] + `, ` + pearKey[0] + ` at $` + pear[pearKey[0]] + `, ` + quinceKey[0] + ` at $` + quince[quinceKey[0]] + `.`);
+    var item;
+    var itemKey;
+    var itemArray = [];
+    var itemPrice;
+    for (var i = 0; i < cart.length; i++){
+    item = cart[i]; // item = {"orange": 45}
+    itemKey = Object.keys(item)[0];
+    itemPrice = item(itemKey);
+    itemArray.push(`${itemKey} at $${itemPrice}`);
   };
+    console.log(`In your cart, you have ` + itemArray.join(, and ) + `.`);
+
 }
 }
 function total() {
