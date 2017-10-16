@@ -47,7 +47,7 @@ function viewCart() {
     };
     var lastPartOfFirstSentence = itemArray.pop();
     var firstPartOfSentence = `In your cart, you have ${itemArray.join(`, `)}`;
-    console.log(`${firstPartOfSentence} and ${lastPartOfFirstSentence}.`);
+    console.log(`${firstPartOfSentence}, and ${lastPartOfFirstSentence}.`);
   }
 }
 function total() {
