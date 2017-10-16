@@ -40,17 +40,15 @@ function viewCart() {
     var itemArray = [];
     var itemPrice;
     for (var i = 0; i < cart.length; i++){
-    item = cart[i]; // item = {"orange": 45}
-    itemKey = Object.keys(item)[0]; // "orange"
-    itemPrice = item[itemKey]; // 45
-    itemArray.push(`${itemKey} at $${itemPrice}`);
-  };
-    console.log(`In your cart, you have ` + itemArray.join(`, `) + `.`);
-    if (i === cart.length-1){
-      console.log(` and ` + itemArray.push(`${itemKey} at $${itemPrice}`));
-    }
-
-}
+      item = cart[i]; // item = {"orange": 45}
+      itemKey = Object.keys(item)[0]; // "orange"
+      itemPrice = item[itemKey]; // 45
+      itemArray.push(`${itemKey} at $${itemPrice}`);
+    };
+    var lastPartOfFirstSentence = itemArray.pop();
+    var firstPartOfSentence = `In your cart, you have ${itemArray.join(`, `)}`;
+    console.log(`${firstPartOfSentence} and ${lastPartOfFirstSentence}.`);
+  }
 }
 function total() {
   //*var totalCost = sorghumCost + tarragonCost;
