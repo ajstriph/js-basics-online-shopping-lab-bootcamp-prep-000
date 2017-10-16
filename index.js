@@ -30,7 +30,7 @@ function viewCart() {
 
 function total() {
   var totalCost = //sorghumCost + tarragonCost
-  return `Your total is ${totalCost}.`;
+  return totalCost;
 }
 
 function removeFromCart(item) {
