@@ -59,7 +59,13 @@ function total() {
   var itemTwoKey = Object.keys(cart[1]);
   var itemTwoValue = itemTwo[itemTwoKey[0]];
   var totalCost = itemOneValue + itemTwoValue;
-  return totalCost;
+  for (var i = 0; i<cart.length; i++){
+    var itemObject = cart[i];
+    var item = Object.keys(cart[i])[0];
+    var price = itemOne[item];
+    amount = amount + price;
+  }
+  return amount;
 
   //*var totalCost = sorghumCost + tarragonCost;
   //return totalCost;
