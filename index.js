@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var itemPrice = Math.random(1,100);
   var itemName = "daikon";
- item = {[itemName]: [itemPrice]};
+ item = {[itemName]: itemPrice};
  cart.push(item);
  console.log(`${itemName} has been added to your cart.`)
  return cart;
@@ -29,8 +29,8 @@ function viewCart() {
 }
 
 function total() {
-  var totalCost = sorghumCost + tarragonCost;
-  return totalCost;
+  //*var totalCost = sorghumCost + tarragonCost;
+  //return totalCost;
 }
 
 function removeFromCart(item) {
