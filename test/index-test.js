@@ -95,7 +95,7 @@ describe("viewCart()", function() {
   });
 
   it("correctly prints a two-item cart", function() {
-    addToCart("mango");
+    addToCart("mangos");
     addToCart("nuts");
 
     const mangoCost = getCart()[0]["mango"];
