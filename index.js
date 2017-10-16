@@ -20,16 +20,17 @@ function addToCart(item) {
 
 
 function viewCart() {
-  if(cart == 0){
-    console.log("Your shopping cart is empty.");
+  if(cart.length == 0){
+    return console.log("Your shopping cart is empty.");
   }
   else {
-    console.log(`In your cart, you have ${itemName} at ${itemPrice}.`);
+    return console.log(`In your cart, you have ${itemName} at ${itemPrice}.`);
   }
 }
 
 function total() {
-  // write your code here
+  var totalCost = //sorghumCost + tarragonCost
+  return console.log(`Your total is ${totalCost}.`)
 }
 
 function removeFromCart(item) {
