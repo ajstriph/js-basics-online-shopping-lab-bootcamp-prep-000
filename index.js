@@ -28,22 +28,20 @@ function viewCart() {
     return console.log(`In your cart, you have ` + keys[0] + ` at $` + object[keys[0]] + `.`);
   }
   else if (cart.length == 2){
-    var mango = cart[0];
-    var nuts = cart[1];
-    var mangoKey = Object.keys(cart[0]);
-    var nutsKey = Object.keys(cart[1]);
-    return console.log(`In your cart, you have ` + mangoKey[0] + ` at $` + mango[mangoKey[0]] + ` and ` + nutsKey[0] + ` at $` + nuts[nutsKey[0]] + `.`);
+    var itemsOne = cart[0];
+    var itemsTwo = cart[1];
+    var itemsOneKey = Object.keys(cart[0]);
+    var itemsTwoKey = Object.keys(cart[1]);
+    return console.log(`In your cart, you have ` + itemsOneKey[0] + ` at $` + itemsOne[itemsOneKey[0]] + ` and ` + itemsTwoKey[0] + ` at $` + itemsTwo[itemsTwoKey[0]] + `.`);
   }
   else{
     while (cart.length > 2){
-    var orange = cart[0];
-    var pear = cart[1];
-    var quince = cart[2];
-    var rhubarb = cart[3];
-    var orangeKey = Object.keys(cart[0]);
-    var pearKey = Object.keys(cart[1]);
-    var quinceKey = Object.keys(cart[2]);
-    var rhubarbKey = Object.keys(cart[3]);
+    var itemOne = cart[0];
+    var itemTwo = cart[1];
+    var itemThree = cart[2];
+    var itemOneKey = Object.keys(cart[0]);
+    var itemTwoKey = Object.keys(cart[1]);
+    var itemThreeKey = Object.keys(cart[2]);
     return console.log(`In your cart, you have ` + orangeKey[0] + ` at $` + orange[orangeKey[0]] + `, ` + pearKey[0] + ` at $` + pear[pearKey[0]] + `, ` + quinceKey[0] + ` at $` + quince[quinceKey[0]] + `.`);
   };
 }
