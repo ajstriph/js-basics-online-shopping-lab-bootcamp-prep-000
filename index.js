@@ -23,8 +23,9 @@ function viewCart() {
     return console.log("Your shopping cart is empty.");
   }
   else if (cart.length == 1){
-    var keys = Object.keys(cart);
-    return console.log(`In your cart, you have` + keys[0] + `at $` + cart[keys[0]] + `.`); 
+    var object = cart[0]; //{lemon:4}
+    var keys = Object.keys(cart[0]);                                  //object['lemon']
+    return console.log(`In your cart, you have` + keys[0] + `at $` + object[keys[0]] + `.`); 
   }
   else if (cart.length == 2){
     Object.keys(cart);
