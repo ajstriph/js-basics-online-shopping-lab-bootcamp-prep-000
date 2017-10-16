@@ -28,7 +28,7 @@ function viewCart() {
   }
   else if (cart.length == 2){
     Object.keys(cart);
-    return console.log(`In your cart, you have` + Object.keys(cart)[0] + `at ${cart[0]} and ` + Object.keys(cart)[1]] );
+    return console.log(`In your cart, you have` + Object.keys(cart)[0] + `at ${cart[0]} and ` + Object.keys(cart)[1] );
   }
   else{
     //while
