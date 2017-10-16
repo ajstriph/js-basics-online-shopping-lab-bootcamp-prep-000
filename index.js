@@ -11,6 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  item = {"cereal": 15};
+ item.push({"bananas": 10});
  return item;
 }
 
