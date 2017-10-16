@@ -23,16 +23,15 @@ function viewCart() {
     return console.log("Your shopping cart is empty.");
   }
   else if (cart.length == 1){
-    var lemonsCost = getCart()[0]["lemons"];
-    return console.log(`In your cart, you have lemons at ${lemonsCost}.`);
+    Object.keys(cart);
+    return console.log(`In your cart, you have` + Object.keys(cart)[0] + `at` + Object.values(cart)[0] + `.`);
   }
   else if (cart.length == 2){
     Object.keys(cart);
-    const mangoCost = getCart()[0]["mango"];
-    const nutsCost = getCart()[1]["nuts"];
-    return console.log(`In your cart, you have mangos at $${mangoCost} and nuts at $${nutsCost}.`);
+    return console.log(`In your cart, you have` + Object.keys(cart)[0] + `at ${cart[0]} and ` + Object.keys(cart)[1]] );
   }
   else{
+    //while
     Object.keys(cart);
     const orangeCost = getCart()[0]["orange"];
     const pearCost = getCart()[1]["pear"];
