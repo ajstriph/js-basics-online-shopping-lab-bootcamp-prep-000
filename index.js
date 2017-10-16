@@ -33,6 +33,7 @@ function viewCart() {
     Object.keys(cart);
     return console.log(`In your cart, you have oranges at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`);
   }
+}
 
 function total() {
   //*var totalCost = sorghumCost + tarragonCost;
