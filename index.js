@@ -28,15 +28,16 @@ function viewCart() {
     return console.log(`In your cart, you have ` + keys[0] + ` at $` + object[keys[0]] + `.`);
   }
   else if (cart.length == 2){
+    var mango = cart[0];
+    var nuts = cart[1];
+    var mangoKey = Object.keys(cart[0]);
+    var nutsKey = Object.keys(cart[1]);
     Object.keys(cart);
-    return console.log(`In your cart, you have` + Object.keys(cart)[0] + `at ${cart[0]} and ` + Object.keys(cart)[1] );
+    return console.log(`In your cart, you have ` + mangoKey[0] + ` at $` + mango[mangoKey[0] + ` and ` + nutsKey[0] + ` at ` + nuts[nutsKey[0]] + `.`];
   }
   else{
     //while
     Object.keys(cart);
-    const orangeCost = getCart()[0]["orange"];
-    const pearCost = getCart()[1]["pear"];
-    const quinceCost = getCart()[2]["quince"];
     return console.log(`In your cart, you have oranges at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`);
   }
 }
