@@ -24,7 +24,7 @@ function viewCart() {
   }
   else if (cart.length == 1){
     var lemonsCost = getCart()[0]["lemons"];
-    return console.log(`In your cart, you have lemons at $15.`);
+    return console.log(`In your cart, you have lemons at ${lemonsCost}.`);
   }
   else if (cart.length == 2){
     Object.keys(cart);
