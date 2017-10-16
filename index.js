@@ -23,8 +23,8 @@ function viewCart() {
     return console.log("Your shopping cart is empty.");
   }
   else if (cart.length == 1){
-    Object.keys(cart);
-    return console.log(`In your cart, you have` + Object.keys(cart)[0] + `at` ); //Object.values(cart)[0] + `.`);
+    var keys = Object.keys(cart);
+    return console.log(`In your cart, you have` + keys[0](cart)[0] + `at` + cart[keys[0]] + `.`); 
   }
   else if (cart.length == 2){
     Object.keys(cart);
