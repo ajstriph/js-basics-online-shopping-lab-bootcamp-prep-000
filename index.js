@@ -20,7 +20,12 @@ function addToCart(item) {
 
 
 function viewCart() {
-  // write your code here
+  if(cart == []){
+    console.log("Your shopping cart is empty.");
+  }
+  else {
+    console.log(`In your cart, you have ${itemName} at ${itemPrice}.`);
+  }
 }
 
 function total() {
