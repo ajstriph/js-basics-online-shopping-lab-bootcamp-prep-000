@@ -51,11 +51,13 @@ function viewCart() {
   }
 }
 function total() {
-  var itemOne;
+  var itemOne = cart[0];
   var itemOneKey = Object.keys(cart[0]);
-  var itemTwo;
+  var itemOneValue = Number(itemOne[itemOneKey[0]]);
+  var itemTwo = cart [1];
   var itemTwoKey = Object.keys(cart[1]);
-  var totalCost = itemOne[itemOneKey[0]] + itemTwo[itemTwoKey[1]];
+  var itemTwoValue = Number(itemTwo[itemTwoKey[1]]);
+  var totalCost = itemOneValue + itemTwoValue;
   return totalCost;
 
   //*var totalCost = sorghumCost + tarragonCost;
