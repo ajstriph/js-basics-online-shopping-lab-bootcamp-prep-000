@@ -32,7 +32,6 @@ function viewCart() {
     var nuts = cart[1];
     var mangoKey = Object.keys(cart[0]);
     var nutsKey = Object.keys(cart[1]);
-    Object.keys(cart);
     return console.log(`In your cart, you have ` + mangoKey[0] + ` at $` + mango[mangoKey[0] + ` and ` + nutsKey[0] + ` at $` + nuts[nutsKey[0]] + `.`]);
   }
   else{
