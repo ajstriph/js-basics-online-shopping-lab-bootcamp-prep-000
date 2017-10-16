@@ -100,6 +100,7 @@ describe("viewCart()", function() {
 
     const mangoCost = getCart()[0]["mango"];
     const nutsCost = getCart()[1]["nuts"];
+debugger
 
     viewCart();
 
