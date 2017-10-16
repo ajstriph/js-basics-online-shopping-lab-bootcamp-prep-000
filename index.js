@@ -10,8 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+ item = {"cereal": 15};
 }
+  return addToCart;
 
 function viewCart() {
   // write your code here
