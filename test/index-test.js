@@ -95,13 +95,11 @@ describe("viewCart()", function() {
   });
 
   it("correctly prints a two-item cart", function() {
-    addToCart("mangos");
+    addToCart("mango");
     addToCart("nuts");
 
     const mangoCost = getCart()[0]["mango"];
     const nutsCost = getCart()[1]["nuts"];
-debugger
-
     viewCart();
 
     expect(console.log).toHaveBeenCalledWith(
