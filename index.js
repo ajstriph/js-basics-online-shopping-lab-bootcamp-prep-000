@@ -46,7 +46,7 @@ function viewCart() {
     itemArray.push(`${itemKey} at $${itemPrice}`);
   };
     console.log(`In your cart, you have ` + itemArray.join(`, `) + `.`);
-    if (i = cart.length-1){
+    if (i === cart.length-1){
       console.log(` and ` + itemArray.push(`${itemKey} at $${itemPrice}`));
     }
 
