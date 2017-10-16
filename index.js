@@ -62,7 +62,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  cart.splice(item);
+  return cart;
 }
 
 function placeOrder(cardNumber) {
