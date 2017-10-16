@@ -51,6 +51,13 @@ function viewCart() {
   }
 }
 function total() {
+  var itemOne;
+  var itemOneKey = Object.keys(cart[0]);
+  var itemTwo;
+  var itemTwoKey = Object.keys(cart[1]);
+  var totalCost = itemOneKey + itemTwoKey;
+  return totalCost;
+
   //*var totalCost = sorghumCost + tarragonCost;
   //return totalCost;
 }
