@@ -23,14 +23,20 @@ function viewCart() {
     return console.log("Your shopping cart is empty.");
   }
   else if (cart.length == 1){
+    var lemonsCost = getCart()[0]["lemons"];
     return console.log(`In your cart, you have lemons at ${lemonsCost}.`);
   }
   else if (cart.length == 2){
     Object.keys(cart);
+    const mangoCost = getCart()[0]["mango"];
+    const nutsCost = getCart()[1]["nuts"];
     return console.log(`In your cart, you have mangos at $${mangoCost} and nuts at $${nutsCost}.`);
   }
   else{
     Object.keys(cart);
+    const orangeCost = getCart()[0]["orange"];
+    const pearCost = getCart()[1]["pear"];
+    const quinceCost = getCart()[2]["quince"];
     return console.log(`In your cart, you have oranges at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`);
   }
 }
