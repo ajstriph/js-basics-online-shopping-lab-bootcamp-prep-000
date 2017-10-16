@@ -55,7 +55,7 @@ function total() {
   var itemOneKey = Object.keys(cart[0]);
   var itemTwo;
   var itemTwoKey = Object.keys(cart[1]);
-  var totalCost = itemOneKey + itemTwoKey;
+  var totalCost = itemOne[itemOneKey[0]] + itemTwo[itemTwoKey[1]];
   return totalCost;
 
   //*var totalCost = sorghumCost + tarragonCost;
