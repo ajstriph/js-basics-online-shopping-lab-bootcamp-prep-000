@@ -29,7 +29,7 @@ function viewCart() {
 }
 
 function total() {
-  var totalCost = //sorghumCost + tarragonCost
+  var totalCost = ;//sorghumCost + tarragonCost
   return totalCost;
 }
 
