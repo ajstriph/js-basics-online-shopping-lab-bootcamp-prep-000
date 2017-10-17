@@ -62,6 +62,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+  item = cart[1];
   cart.splice(item);
   return cart;
 }
