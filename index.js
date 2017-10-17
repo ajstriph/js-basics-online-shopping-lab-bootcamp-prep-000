@@ -64,9 +64,12 @@ function total() {
 function removeFromCart(item) {
   var specificItem;
   item = specificItem;
+  for (var i = 0; i<cart.length; i++){
+  specificItem = cart[i];
   cart.splice(item);
-  if (item != cart){
+    if (item != cart[i]){
     console.log("That item is not in your cart.");
+    }
   }
   return cart;
 }
