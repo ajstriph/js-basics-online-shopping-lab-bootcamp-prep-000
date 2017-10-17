@@ -65,10 +65,10 @@ function removeFromCart(item) {
   var specificItem;
   item = specificItem;
   cart.splice(item);
-  return cart;
   if (item != cart){
     console.log("That item is not in your cart.");
   }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
