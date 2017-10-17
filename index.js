@@ -62,9 +62,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  item = cart[1];
+  var specificItem;
+  item = specificItem;
   cart.splice(item);
   return cart;
+  if (item != cart){
+    console.log("That item is not in your cart.");
+  }
 }
 
 function placeOrder(cardNumber) {
